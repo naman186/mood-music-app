@@ -20,7 +20,7 @@ function App() {
     setSelectedMood(mood);
 
     try {
-      const response = await fetch(`http://localhost:3000/api/recommend/${mood}`);
+      const response = await fetch(`https://mood-music-backend-5n42.onrender.com/api/recommend/${mood}`);
       const data = await response.json();
       setPlaylist(data);
       setCurrentSong(null);
